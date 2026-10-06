@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Js</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <button type="button" onclick="myButton()">Tekan Saya</button>
+    <button type="button" onclick="delButton()">Hapus</button>
+
+    <p id="hasil"></p>
+
+    <!-- JavaScript -->
+    <script>
+      // variabel
+      let a = "Selamat Pagi Dunia";
+
+      document.getElementById("demo").innerHTML = a;
+
+      //   function menampilkan kata
+      function myButton() {
+        document.getElementById("hasil").innerHTML = "Tes Button";
+      }
+
+      //   function hapus kata (perlu di konfirm)
+      function delButton() {
+        document.getElementById("hasil").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

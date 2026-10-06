@@ -1,11 +1,11 @@
-# [Nama Topik]
+# [Basic JavaScript]
 
-**Tanggal:** YYYY-MM-DD
-**Durasi:** X jam
+**Tanggal:** 2026-10-06
+**Durasi:** 30 Menit
 
 ## Apa yang dipelajari
 
-- Konsep 1:
+- Konsep 1: Cara menjalankan kode js, variabel, tipe data.
 - Konsep 2:
 - Konsep 3:
 
@@ -27,7 +27,7 @@
 
 ## Ringkasan dengan kata sendiri
 
-(2–3 kalimat, seolah menjelaskan ke teman)
+yang dipelajari sampai di tipe data, untuk selanjutnya agar dilanjutkan ke oprator dan kondisional.
 
 ## Sumber
 
