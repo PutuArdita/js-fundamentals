@@ -66,3 +66,76 @@ let celcius = 37;
 let fahrenheit = (celcius * 9) / 5 + 32;
 
 console.log(`${celcius}C = ${fahrenheit}F`);
+
+//day 2 (oprator & conditional)
+
+/*The Assignment Operator = assigns values
+
+The Addition Operator + adds values
+
+The Multiplication Operator * multiplies values
+
+The Comparison Operator > compares values*/
+
+// MENENTUKAN SUATU BILANGAN GANJIL ATAU GENAP
+let tesAngka = 15;
+
+if (tesAngka % 2 === 0) {
+  //=== adalah strict equality
+  //jika tesAngka sisa hasil bagi 2 sama dengan 0, maka genap.
+  console.log("Bilangan Genap");
+} else {
+  console.log("Bilangan Ganjil");
+}
+
+// cek angka apakah positif, negatif atau nol
+let cekAngka = 0;
+
+if (cekAngka > 0) {
+  console.log("Positif");
+} else if (cekAngka === 0) {
+  console.log("Nol");
+} else {
+  console.log("Negatif");
+}
+
+// perbandingan dengan loose dan strict equality (kesamaan)
+console.log(`5 == "5"`, 5 == "5");
+console.log(`5 === "5"`, 5 === "5");
+// console.log("0 == false :", 0 == false);
+// console.log("0 === false :", 0 === false);
+// console.log("'' == 0 :", "" == 0);
+// console.log("null == undefined :", null == undefined);
+// console.log("null === undefined :", null === undefined);
+
+// cek skor dengan huruf
+const nilaiSiswa = 90;
+
+if (nilaiSiswa >= 90) {
+  console.log("A");
+} else if (nilaiSiswa >= 80) {
+  console.log("B");
+} else if (nilaiSiswa >= 70) {
+  console.log("C");
+} else {
+  console.log("D");
+}
+
+// mengecek tahun kabisat
+const cekTahun = 2024;
+//cara 1
+if (cekTahun % 400 === 0) {
+  console.log("Tahun Kabisat");
+} else if (cekTahun % 100 === 0) {
+  console.log("Bukan Kabisat");
+} else if (cekTahun % 4 === 0) {
+  console.log("Tahun Kabisat");
+} else {
+  console.log("Bukan Kabisat");
+}
+// cara 2
+if ((cekTahun % 4 === 0 && cekTahun % 100 !== 0) || cekTahun % 400 === 0) {
+  console.log(`${cekTahun} Tahun Kabisat`);
+} else {
+  console.log(`${cekTahun} Bukan Tahun Kabisat`);
+}
