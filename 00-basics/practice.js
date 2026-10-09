@@ -135,7 +135,53 @@ if (cekTahun % 400 === 0) {
 }
 // cara 2
 if ((cekTahun % 4 === 0 && cekTahun % 100 !== 0) || cekTahun % 400 === 0) {
+  // bacanya, jika tahun habis dibagi 4 dan tahun tidak habis dibagi 100, atau tahun habis dibagi 400.
   console.log(`${cekTahun} Tahun Kabisat`);
 } else {
   console.log(`${cekTahun} Bukan Tahun Kabisat`);
 }
+
+// masih dalam kondisional (mengecek atau mengubah nama hari dari nomor menjadi nama hari)
+const hariIni = 6;
+// untuk input angka yaitu 0-6
+switch (hariIni) {
+  case 0:
+    console.log("Minggu");
+    break;
+  case 1:
+    console.log("Senin");
+    break;
+  case 2:
+    console.log("Selasa");
+    break;
+  case 3:
+    console.log("Rabu");
+    break;
+  case 4:
+    console.log("Kamis");
+    break;
+  case 5:
+    console.log("Jumat");
+    break;
+  case 6:
+    console.log("Sabtu");
+    break;
+  default:
+    console.log("Hari tidak cocok");
+}
+
+// masih di kondisional
+const a1 = 9;
+const b2 = 10;
+const c3 = 16;
+
+let terbesar = a1;
+
+if (b2 > terbesar) {
+  terbesar = b2;
+}
+if (c3 > terbesar) {
+  terbesar = c3;
+}
+
+console.log(`Angka terbesar ${terbesar}`);

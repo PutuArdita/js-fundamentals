@@ -59,6 +59,36 @@ Karena itu bagian "tidak habis dibagi 100" ditulis `% 100 !== 0`.
 Tanpa syarat ini, tahun seperti 1900 dan 2100 akan salah dianggap kabisat,
 karena keduanya habis dibagi 4 padahal habis dibagi 100 juga (dan tidak habis dibagi 400).
 
+### Switch: `break` dan `default`
+
+- **`break`**: menghentikan `switch` setelah `case` yang cocok selesai dijalankan. Tanpa `break`, JS lanjut menjalankan `case` di bawahnya.
+- **`default`**: dijalankan kalau tidak ada `case` yang cocok. Fungsinya seperti `else`, untuk menangani nilai di luar yang diharapkan.
+
+Eksperimen 1: `break` dihapus di `case 2`\*\*
+Dengan `hariIni = 2`, yang tercetak "Senin" lalu "Selasa". Setelah `case 2` cocok, JS terus menjalankan `case 3` sampai bertemu `break` berikutnya. Ini disebut _fall-through_.
+
+Eksperimen 2: `hariIni = "2"` (string)\*\*
+Yang tercetak "Hari tidak cocok" (masuk `default`). `switch` membandingkan secara ketat (seperti `===`), jadi string `"2"` tidak sama dengan number `2`.
+
+## Cek Angka Terbesar (Menggunakan variabel sementara, if sejajar)
+
+```js
+const a = 20,
+  b = 10,
+  c = 9;
+let terbesar = a;
+
+if (b > terbesar) terbesar = b;
+if (c > terbesar) terbesar = c;
+
+console.log(`Angka terbesar ${terbesar}`);
+```
+
+- **Pola:** simpan juara sementara di `terbesar`, lalu bandingkan angka lain satu per satu.
+- **Kenapa `if` sejajar:** tiap angka harus selalu dicek. `if` bersarang atau `else if` bisa melewatkan perbandingan.
+- **Jangan pakai `let` di dalam blok `if`:** itu membuat variabel baru (shadowing). Cukup `terbesar = b;`.
+- **Tes:** angka terbesar di posisi a, b, c, plus angka kembar dan negatif.
+
 ## Sumber
 
 - [judul](link)
