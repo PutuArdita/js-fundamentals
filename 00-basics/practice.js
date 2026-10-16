@@ -185,3 +185,9 @@ if (c3 > terbesar) {
 }
 
 console.log(`Angka terbesar ${terbesar}`);
+
+// cetak angka 1 sampai 10 dengan for
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`Angka ke ${i}`);
+}
