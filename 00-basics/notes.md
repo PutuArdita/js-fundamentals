@@ -1,13 +1,13 @@
 # [Basic JavaScript]
 
-**Tanggal:** 2026-10-06 / 2026/10/08 /
-**Durasi:** 30 Menit / 40 menit
+**Tanggal:** 2026-10-06 / 2026/10/08 / 2026/10/18
+**Durasi:** 30 Menit / 40 menit / 60 menit
 
 ## Apa yang dipelajari
 
 - Konsep 1: Cara menjalankan kode js, variabel, tipe data.
 - Konsep 2: Operator dan Kondisional
-- Konsep 3:
+- Konsep 3: Perulangan (loop), String, Array
 
 ## Contoh kode penting
 
@@ -84,10 +84,15 @@ if (c > terbesar) terbesar = c;
 console.log(`Angka terbesar ${terbesar}`);
 ```
 
-- **Pola:** simpan juara sementara di `terbesar`, lalu bandingkan angka lain satu per satu.
-- **Kenapa `if` sejajar:** tiap angka harus selalu dicek. `if` bersarang atau `else if` bisa melewatkan perbandingan.
-- **Jangan pakai `let` di dalam blok `if`:** itu membuat variabel baru (shadowing). Cukup `terbesar = b;`.
-- **Tes:** angka terbesar di posisi a, b, c, plus angka kembar dan negatif.
+- _Pola:_ simpan juara sementara di `terbesar`, lalu bandingkan angka lain satu per satu.
+- \*_Kenapa `if` sejajar:_ tiap angka harus selalu dicek. `if` bersarang atau `else if` bisa melewatkan perbandingan.
+- \*_Jangan pakai `let` di dalam blok `if`:_ itu membuat variabel baru (shadowing). Cukup `terbesar = b;`.
+- \*_Tes:_ angka terbesar di posisi a, b, c, plus angka kembar dan negatif.
+
+## Looping, String, Array
+
+- console.log di luar looping itu hanya menampilkan hasil terakhir dari proses loopingnya
+- untuk mengecek suatu kondisi, cek dari yang paling krusial (spesifik)
 
 ## Sumber
 
