@@ -93,6 +93,7 @@ console.log(`Angka terbesar ${terbesar}`);
 
 - console.log di luar looping itu hanya menampilkan hasil terakhir dari proses loopingnya
 - untuk mengecek suatu kondisi, cek dari yang paling krusial (spesifik)
+- baca lagi pada komentar di setiap baris kode
 
 ## Sumber
 
