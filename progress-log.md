@@ -18,3 +18,10 @@
 - Durasi: -
 - Paham: memahami operator aritmetika, penugasan, pembandingan, dan kondisional
 - Kendala: -
+
+## 2026-10-21
+
+- Topik: Topik variables and scope
+- Durasi: -
+- Paham: accessibility suatu variable
+- Kendala: -
