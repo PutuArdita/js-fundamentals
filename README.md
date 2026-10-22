@@ -14,7 +14,7 @@ Setiap topik: baca materi → ketik ulang kode → latihan mandiri → catat di 
 ## Roadmap
 
 - [x] [00 - Basics](./00-basics)
-- [ ] [01 - Variables & Scope](./01-variables-scope)
+- [x] [01 - Variables & Scope](./01-variables-scope)
 - [ ] [02 - Functions](./02-functions)
 - [ ] [03 - Array & Object Methods](./03-array-object-methods)
 - [ ] [04 - DOM & Events](./04-dom-events)
