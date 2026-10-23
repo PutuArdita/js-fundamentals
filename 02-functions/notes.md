@@ -21,6 +21,12 @@ function merupakan barisan kode yang dapat digunakan ulang untuk tugas tertentu,
 - arrow function: const f = () => {}
 - parameter default digunakan jika argumen tidak dikirim
 
+`callback function dipanggil dalam function penerima`
+
+... di parameter mengumpulkan sisa argumen menjadi array, dan harus di posisi terakhir.
+Closure: function mengingat variabel dari scope tempat ia dibuat, meskipun scope itu sudah selesai.
+Tiap pemanggilan function pembuat closure menghasilkan variabel yang terpisah.
+
 # Sumber
 
 https://www.w3schools.com/js/js_functions.asp
