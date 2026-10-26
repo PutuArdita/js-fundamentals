@@ -1,6 +1,6 @@
 # [Functions]
 
-**Tanggal:** 2026/10/22
+**Tanggal:** 2026/10/22 / 2026/10/23 / 2026/10/26
 **Durasi:**
 
 # Apa yang dipelajari

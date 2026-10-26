@@ -110,3 +110,14 @@ const kaliDua = kalikanDengan(2);
 const kaliTiga = kalikanDengan(3);
 console.log(kaliDua(5));
 console.log(kaliTiga(5));
+
+// review soal 3
+/**? - kalikanDengan(2) dipanggil, dan parameter faktor bernilai argumen 2
+ * - kemudian function baru dibuat dan dikembalikan melalui return (angka) => faktor * angka;
+ * - setelah itu, function kalikanDengan itu selesai, dan biasanya parameter faktor hilang disini,
+ * tapi function di dalamnya yang dikembalikan masih memerlukannya sehingga disimpan di kaliDua,
+ * dengan faktor = 2.
+ * - kaliDua dipanggil dengan argumen (5) yang dimana menjadi argumen dari parameter angka,
+ *   kemudian menjadi angka = 5 dan faktor = 2 yang tadi disimpan, menjadi hasilnya 10.
+ *
+ */

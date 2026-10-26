@@ -15,7 +15,7 @@ Setiap topik: baca materi → ketik ulang kode → latihan mandiri → catat di 
 
 - [x] [00 - Basics](./00-basics)
 - [x] [01 - Variables & Scope](./01-variables-scope)
-- [ ] [02 - Functions](./02-functions)
+- [x] [02 - Functions](./02-functions)
 - [ ] [03 - Array & Object Methods](./03-array-object-methods)
 - [ ] [04 - DOM & Events](./04-dom-events)
 - [ ] [05 - Error Handling](./05-error-handling)
@@ -36,4 +36,4 @@ node 00-basics/practice.js
 
 ## Sumber Belajar
 
-- (isi dengan materi/kursus yang dipakai)
+- (https://www.w3schools.com/js/default.asp)
