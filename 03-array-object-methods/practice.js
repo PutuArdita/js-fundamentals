@@ -122,3 +122,18 @@ const daftarLulus = siswa
   .filter((score) => score.nilai >= 70)
   .map((orang) => orang.nama);
 console.log(daftarLulus);
+
+// sesi 3 (reduce)
+
+// soal sesi 3
+// hitung total [3, 8, 1, 9, 4] dengan reduce. Hasil: 25. Lalu hitung rata-ratanya (total dibagi length). Hasil: 5.
+const totalAngka = [3, 8, 1, 9, 4];
+
+const hitungTotal = totalAngka.reduce((total, item) => total + item, 0);
+// const hitungRata = totalAngka.reduce(
+//   (total, item) => total + item / item.length,
+//   0,
+// );
+// console.log(hitungRata);
+console.log(hitungTotal);
+console.log(hitungTotal / totalAngka.length);
