@@ -32,6 +32,11 @@ another method (sort, reverse, join, split | Math.min / Math.max, method string 
 
 3. mencari elemen (includes: menjawab ada atau tidak (true/false), indexOf: berada di index berapa, jika tidak ada maka -1)
 
+4. forEach menjalankan sesuatu untuk tiap elemen, tanpa hasil.
+5. map mengubah tiap elemen jadi array baru, dan filter menyaring jadi array baru. Keduanya tidak mengubah array asli.
+6. find mengembalikan satu elemen pertama yang cocok, atau undefined.
+7. { } pada arrow function wajib memakai return.
+
 # Sumber
 
 https://www.w3schools.com/js

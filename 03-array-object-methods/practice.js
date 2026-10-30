@@ -71,3 +71,54 @@ tambahJikaBelum(daftar, "c");
 console.log(daftar);
 tambahJikaBelum(daftar, "a");
 console.log(daftar);
+
+console.log("\n");
+
+// sesi 2
+const numberSection2 = [3, 8, 1, 9, 4];
+
+// forEach: menjalankan callback setiap elemen, dan tidak menghasilkan array baru
+numberSection2.forEach((x) => console.log(x * 2));
+
+// map: mengubah setiap elemen, hasilnya array baru dengan jumlah elemen yang sama
+const kaliDua = numberSection2.map((x) => x * 2);
+console.log(kaliDua);
+console.log(numberSection2);
+
+// filter: menyaring elemen, hasilnya array baru yang berisi nilai yang lolos
+const moreThan = numberSection2.filter((x) => x > 3);
+console.log(moreThan);
+
+// find: mengambil elemen pertama yang cocok, kalau tidak ada hasilnya undefined.
+console.log(numberSection2.find((x) => x > 5));
+console.log(numberSection2.find((x) => x > 100)); //undefined
+
+// soal sesi 2
+// dari const harga = [10000, 25000, 5000], buat array baru berisi harga setelah dinaikkan 10% memakai map.
+const harga = [10000, 25000, 5000];
+
+const markUp = harga.map((x) => x + x * 0.1);
+console.log(markUp);
+
+/**dari const nilai = [80, 55, 90, 40, 70]:
+Ambil nilai yang lulus (≥ 70) dengan filter. Hasil: [80, 90, 70].
+Cari nilai pertama yang kurang dari 60 dengan find. Hasil: 55. */
+const nilai = [80, 55, 90, 40, 70];
+const lulus = nilai.filter((x) => x >= 70);
+console.log(nilai.find((x) => x < 60));
+
+// soal 3
+const siswa = [
+  { nama: "Ar", nilai: 80 },
+  { nama: "Budi", nilai: 55 },
+  { nama: "Citra", nilai: 90 },
+];
+//Buat array berisi nama saja dengan map. Hasil: ["Ar", "Budi", "Citra"].
+
+const nameOf = siswa.map((x) => x.nama);
+console.log(nameOf);
+//Buat array berisi nama siswa yang lulus (nilai ≥ 70). Gabungkan filter lalu map. Hasil: ["Ar", "Citra"].
+const daftarLulus = siswa
+  .filter((score) => score.nilai >= 70)
+  .map((orang) => orang.nama);
+console.log(daftarLulus);
