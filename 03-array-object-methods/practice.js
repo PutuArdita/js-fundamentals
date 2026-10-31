@@ -186,3 +186,26 @@ const munculHuruf = karakter.reduce((muncul, item) => {
 }, 0);
 
 console.log(munculHuruf);
+
+//SESI 4
+console.log("\n");
+
+// soal
+/**buat object buku dengan properti judul, penulis, dan tahun.
+ * Cetak judul dengan notasi titik dan penulis dengan notasi kurung siku.
+ * Tambahkan properti halaman, ubah tahun, lalu cetak object-nya. */
+
+const buku = {
+  judul: "Pemrograman web",
+  penulis: "Mark",
+  tahun: 2015,
+};
+//cetak dengan notasi . dan [];
+console.log("Judul Buku: " + buku.judul);
+console.log(buku["penulis"]);
+
+// tambah properti halaman
+buku.halaman = 129;
+buku.tahun = 2019;
+// cetak objek
+console.log(buku);
