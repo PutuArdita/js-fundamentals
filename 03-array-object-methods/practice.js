@@ -137,3 +137,30 @@ const hitungTotal = totalAngka.reduce((total, item) => total + item, 0);
 // console.log(hitungRata);
 console.log(hitungTotal);
 console.log(hitungTotal / totalAngka.length);
+
+//cari angka terbesar di array menggunakan reduce
+const cariAngka = [3, 8, 18, 9, 4];
+
+const cariJuara = cariAngka.reduce((juara, item) => {
+  if (juara > item) {
+    return juara;
+  }
+  return item;
+}, cariAngka[0]); //Nilai awalnya cariAngka[0], bukan 0, supaya array berisi angka negatif tetap benar.
+console.log(cariJuara);
+
+/**hitung total belanja dari array object berikut (harga dikali jumlah): */
+
+const belanja = [
+  //array berisi object
+  { nama: "Buku", harga: 20000, jumlah: 2 },
+  { nama: "Pensil", harga: 3000, jumlah: 5 },
+  { nama: "Penghapus", harga: 2000, jumlah: 1 },
+];
+
+const totalBelanja = belanja.reduce(
+  (total, item) => total + item.harga * item.jumlah,
+  0,
+);
+
+console.log(totalBelanja);

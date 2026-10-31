@@ -37,6 +37,9 @@ another method (sort, reverse, join, split | Math.min / Math.max, method string 
 6. find mengembalikan satu elemen pertama yang cocok, atau undefined.
 7. { } pada arrow function wajib memakai return.
 
+reduce menggabungkan semua elemen menjadi satu nilai, dengan pola akumulator.
+Nilai yang di-return callback menjadi penampung di putaran berikutnya.
+
 # Sumber
 
 https://www.w3schools.com/js
