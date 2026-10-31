@@ -164,3 +164,25 @@ const totalBelanja = belanja.reduce(
 );
 
 console.log(totalBelanja);
+// ini soal tambahan untuk reduce
+const hargaLebih = belanja.reduce((total, item) => {
+  if (item.harga >= 3000) {
+    return total + item.harga * item.jumlah;
+  }
+  return total;
+}, 0);
+console.log("Ini Harga Lebih: " + hargaLebih);
+// tambahan soal mengenai reduce
+
+//Menghitung kemunculan: dari ["a", "b", "a", "c", "a"], hitung berapa kali "a" muncul dengan reduce.
+
+const karakter = ["a", "b", "a", "c", "a"];
+
+const munculHuruf = karakter.reduce((muncul, item) => {
+  if (item === "a") {
+    return muncul + 1;
+  }
+  return muncul;
+}, 0);
+
+console.log(munculHuruf);
