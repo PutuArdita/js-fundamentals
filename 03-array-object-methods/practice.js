@@ -226,12 +226,46 @@ const hitungRata = daftarNilai.reduce((total, item) => {
 
 console.log(hitungRata / daftarNilai.length);
 
-/**buat function centangTugas(daftar, id) yang menerima array tugas dan satu id, 
+/**buat function centangTugas(daftar, id) yang menerima array tugas dan satu id,
  * lalu mengubah properti selesai milik tugas dengan id itu menjadi true.
  *  Gunakan find. Tes: */
 
-function centangTugas(daftar,id){
-  const tugas = daftar.find((item)=> tugas === item.id);
+function centangTugas(daftar, id) {
+  const tugas = daftar.find((item) => id === item.id);
 
-  if(tugas)
+  if (tugas) {
+    tugas.selesai = true;
+  }
 }
+
+// tes
+const daftarTugas = [
+  { id: 1, teks: "Belajar JS", selesai: false },
+  { id: 2, teks: "Makan", selesai: false },
+];
+
+centangTugas(daftarTugas, 2);
+console.log(daftarTugas); // id 2 jadi selesai: true, id 1 tetap false
+
+centangTugas(daftarTugas, 99);
+console.log(daftarTugas); // tidak berubah, dan tidak error
+
+console.log("\n");
+// SESI 5
+
+/**dari const buku = { judul: "Pemrograman web", penulis: "Mark", tahun: 2015 }, ambil judul dan
+ *  tahun dengan destructuring object, lalu cetak keduanya.
+ * Lalu dari const hari = ["Senin", "Selasa", "Rabu", "Kamis"], ambil
+ * Senin ke variabel awal dan sisanya ke lainnya (rest). Hasil lainnya: ["Selasa", "Rabu", "Kamis"]. */
+
+const bukuDes = { judul: "Pemrograman web", penulis: "Mark", tahun: 2015 };
+
+const { judul, tahun } = bukuDes;
+console.log(judul);
+console.log(tahun);
+
+const hari = ["Senin", "Selasa", "Rabu", "Kamis"];
+
+const [awal, ...akhir] = hari;
+console.log(awal);
+console.log(akhir);
