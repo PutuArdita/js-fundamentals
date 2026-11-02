@@ -209,3 +209,29 @@ buku.halaman = 129;
 buku.tahun = 2019;
 // cetak objek
 console.log(buku);
+
+/**dari const nilai = { matematika: 80, ipa: 90, bahasa: 70 }:
+Cetak semua nama pelajaran dengan Object.keys.
+Hitung rata-rata nilai memakai Object.values dan reduce. Hasil: 80. */
+
+const mapel = { matematika: 80, ipa: 90, bahasa: 70 };
+
+console.log(Object.keys(mapel));
+
+const daftarNilai = Object.values(mapel);
+
+const hitungRata = daftarNilai.reduce((total, item) => {
+  return total + item;
+});
+
+console.log(hitungRata / daftarNilai.length);
+
+/**buat function centangTugas(daftar, id) yang menerima array tugas dan satu id, 
+ * lalu mengubah properti selesai milik tugas dengan id itu menjadi true.
+ *  Gunakan find. Tes: */
+
+function centangTugas(daftar,id){
+  const tugas = daftar.find((item)=> tugas === item.id);
+
+  if(tugas)
+}
