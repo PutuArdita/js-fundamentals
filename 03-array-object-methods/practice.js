@@ -269,3 +269,42 @@ const hari = ["Senin", "Selasa", "Rabu", "Kamis"];
 const [awal, ...akhir] = hari;
 console.log(awal);
 console.log(akhir);
+
+/** buat salinan array const asli = [1, 2, 3] dengan spread, tambahkan 4 ke salinan dengan push,
+ * lalu cetak keduanya. Hasil: asli tetap [1, 2, 3], salinan [1, 2, 3, 4].*/
+
+const asli = [1, 2, 3];
+const asli2 = [1, 2, 3];
+// salin dulu array di atas dengan spread
+const salin = [...asli];
+salin.push(4);
+// eksperimen perbedaan menggunakan spread dan tidak
+const salin2 = asli2;
+salin2.push(4);
+
+console.log(asli);
+console.log(salin);
+console.log(asli2);
+console.log(salin2);
+
+/**buat function centangTugasBaru(daftar, id) yang mengembalikan array baru dengan tugas id
+ * yang berstatus selesai: true, tanpa mengubah daftar asli.
+ * Gunakan map dan spread object. */
+
+function centangTugasBaru(daftar2, id) {
+  return daftar2.map((item) => {
+    if (id === item.id) {
+      return { ...item, selesai: true };
+    }
+    return item;
+  });
+}
+
+const daftar2 = [
+  { id: 1, teks: "Belajar JS", selesai: false },
+  { id: 2, teks: "Makan", selesai: false },
+];
+
+const hasil = centangTugasBaru(daftar2, 2);
+console.log(hasil); // id 1 selesai: false, id 2 selesai: true
+console.log(daftar2); // KEDUANYA tetap selesai: false

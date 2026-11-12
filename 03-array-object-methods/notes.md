@@ -40,6 +40,14 @@ another method (sort, reverse, join, split | Math.min / Math.max, method string 
 reduce menggabungkan semua elemen menjadi satu nilai, dengan pola akumulator.
 Nilai yang di-return callback menjadi penampung di putaran berikutnya.
 
+- item.properti = nilai mengubah object asli, sedangkan { ...item, properti: nilai } membuat salinan baru.
+- Hasil sebuah assignment (a = b) adalah nilai b, jadi return item.selesai = true mengembalikan true.
+- map yang mengembalikan salinan hanya untuk elemen yang berubah, dan elemen lain apa adanya, adalah pola update data tanpa mengubah aslinya.
+
+- Bandingkan properti milik elemen (item.id), bukan variabel pencarian saja (if (id)).
+
+-another method: join, split, reverse, sort, Math.max and Math.min, method for string.
+
 # Sumber
 
 https://www.w3schools.com/js
