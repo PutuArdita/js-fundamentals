@@ -16,7 +16,7 @@ Setiap topik: baca materi → ketik ulang kode → latihan mandiri → catat di 
 - [x] [00 - Basics](./00-basics)
 - [x] [01 - Variables & Scope](./01-variables-scope)
 - [x] [02 - Functions](./02-functions)
-- [ ] [03 - Array & Object Methods](./03-array-object-methods)
+- [x] [03 - Array & Object Methods](./03-array-object-methods)
 - [ ] [04 - DOM & Events](./04-dom-events)
 - [ ] [05 - Error Handling](./05-error-handling)
 - [ ] [06 - Async/Await](./06-async-await)

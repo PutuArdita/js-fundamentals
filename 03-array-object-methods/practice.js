@@ -308,3 +308,53 @@ const daftar2 = [
 const hasil = centangTugasBaru(daftar2, 2);
 console.log(hasil); // id 1 selesai: false, id 2 selesai: true
 console.log(daftar2); // KEDUANYA tetap selesai: false
+
+// SESI 6 (ANOTHER METHOD CAN BE USEFULL)
+
+// balik string "javascript" dengan split, reverse, dan join.
+// Hasil: tpircsavaj.
+// Lalu cari angka terbesar dan terkecil dari [3, 8, 1, 9, 4] memakai Math.max dan Math.min
+// dengan spread.
+
+const teks = "javascript";
+
+const hasilTeks = teks.split("").reverse().join("");
+console.log(hasilTeks);
+
+const angkaSesi6 = [3, 8, 1, 9, 4];
+
+console.log(Math.max(...angkaSesi6));
+console.log(Math.min(...angkaSesi6));
+
+/** dari const nilai = [80, 55, 90, 40, 70]:
+Urutkan dari terbesar ke terkecil. Hasil: [90, 80, 70, 55, 40].
+Pastikan array nilai asli tidak berubah (salin dulu dengan spread).
+Coba juga nilai.sort() tanpa callback pada [10, 9, 1, 100], lalu catat hasilnya yang aneh dan alasannya.*/
+
+const nilaiSesi6 = [80, 55, 90, 40, 70];
+
+// salin dulu dengan spread
+const salinNilaiSesi6 = [...nilaiSesi6];
+// mengurutkan dari terbesar ke terkecil
+console.log(salinNilaiSesi6.sort((a, b) => b - a));
+console.log(nilaiSesi6);
+
+// tanpa callback, sort mengubah tiap elemen menjadi teks lalu membandingkannya
+// huruf demi huruf, seperti urutan kamus.
+// Karena "10" dan "100" diawali "1", keduanya dianggap lebih kecil dari "9".
+
+const campur = [10, 9, 1, 100];
+console.log(campur.sort()); //ini tanpa callback, maka hasilnya menjadi [ 1, 10, 100, 9 ], karena terbaca string.
+
+/**buat function cekPalindrom(kata) yang mengembalikan true atau false,
+ * tidak peduli huruf besar atau kecil.
+ *  Gunakan toLowerCase, split, reverse, dan join. */
+
+function cekPalindrom(kata) {
+  // ubah nilai parameter ke huruf kecil semua dulu
+  const kecil = kata.toLowerCase();
+  const balik = kecil.split("").reverse().join("");
+  return kecil === balik;
+}
+
+console.log(cekPalindrom("Katak"));

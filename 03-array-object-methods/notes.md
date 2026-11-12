@@ -47,6 +47,9 @@ Nilai yang di-return callback menjadi penampung di putaran berikutnya.
 - Bandingkan properti milik elemen (item.id), bukan variabel pencarian saja (if (id)).
 
 -another method: join, split, reverse, sort, Math.max and Math.min, method for string.
+Method dipanggil lewat nilai.method(), bukan variabel.method(nilai).
+Variabel const tidak boleh dipakai di baris deklarasinya sendiri (TDZ).
+Perbandingan === sudah menghasilkan true/false, jadi bisa langsung di-return.
 
 # Sumber
 
